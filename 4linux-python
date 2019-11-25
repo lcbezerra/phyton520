@@ -1,0 +1,221 @@
+# ls
+# pwd
+# touch teste.txt
+# > teste2.txt
+# rm -i  ### (modo interativo)
+# mkdir diretorio (cria diretorio)
+# rm -rf (recursivo)
+	rm -rf diretorio/
+
+Ctrl + L (limpa tela)
+
+# mkdir 520
+(cria arquivo 520)
+
+Iniciando GIT
+
+#git init
+(cria um repositorio local git)
+
+# ls -a
+
+# git config --global user.name
+( ver usuario criador)
+
+# git config --global user.name haunebu3@hotmail.com
+(agrega ao git o usuario desejado do GITHUB)
+
+# git config --global user.mail haunebu3@hotmail.com
+(agrega ao git o email desejado do GITHUB)
+
+# git status
+(ver os ramo e arvores do git)
+
+# touch README.md
+(Criar ArchDown)
+
+ENTRAR em markdown - pode usar o StackEdit - stackedit.io
+
+ABRIR Visual Studio Code - app dentro do LINUX
+- dentro dele pode editar o MarkDown
+- abrir o README.md
+
+
+# git status
+(mostra status do arquivo GIT - NO CASO ESTÁ NÃO MONITORADO)
+
+# git add README.md
+(Adiciona o arquivo para monitorado)
+
+# git status
+(Verifica o novo status)
+
+# git commit -m "Adicionado README.md"
+((pode ter no máximo 50 caracteres 
+
+[master (root-commit) 4edfa47] Adicionado README.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 520/README.md
+
+))
+
+# cat README.md
+(nao vai ter nada no arquivo)
+
+(entraremos no VIsual Studio Code e configura o autosave )
+
+# git --help
+
+#git log
+(mostra todas modificações no git)
+
+# git commit -m "Mensagem"
+(mostra o que foi adicionado no commit)
+
+
+OPEN STACK - Gerenciamento de clusters (servidores)
+ANSIBLE - Gerenciamento Remoto
+GLOBO.COM - Funcionalidades escritas em Python
+YOUTUBE.COM - Gerenciamento de vídeo (escrito em Python)
+
+PYTHON
+-INICIO
+
+# python3
+(entra no modo interativo em modo real - resulta em tempo real)
+
+>>> print('Olá Mundo')
+Olá Mundo
+
+>>> exit()
+developer@developer:~/Documentos/520$ ^C
+
+PARA INSTALAR PYTHON 
+no google - download python
+
+Python 3.8.0
+abre arquivo tar.xz
+
+ou no LINUX
+# sudo apt install python3
+(instala python no linux)
+
+No VISUAL CODE
+- criar diretorio Aula1
+- criar arquivo sintaxeBasica.py
+
+- entrar em EXTENSIONS
+-digitar @recommended
+
+- Instalar o Python
+
+##################
+COMEÇANDO A PROGRAMAR
+#################
+
+((((voltando ao terminal do Linux)))))
+# which python3
+(mostra onde esta o executavel no Python3)
+((((saindo do terminal)))))
+
+#! /usr/bin/python3/
+(dentro do Visual code  - dentro do sintaxeBasica.py - define interpretador do python3)
+
+print ('hello world')
+
+
+((((abrindo terminal dentro do visual Ctrl+Shift+acentoagudo ou View>Terminal))))
+
+entrar na pasta Aula1
+via terminal aberto
+
+# python3 sintaxeBasica.py
+
+(((# input ("digite seu nome: ") (eh uma entrada))))
+
+######
+VARIAVEIS
+######
+
+- variavel aloca tempo na memoria para executar o programa
+# nome=input('Digite seu nome: ')
+
+-dica: comenta série de blocos (Ctrl + /)
+- f string - exemplo:  # print (f'Seu nome é {nome}')
+
+
+# tipos de variáveis
+
+texto = '4linux' #string
+numero = 3 # int
+numero_real = 3.6 #float
+CONSTANTE = 3.14
+
+
+
+(((((( volta ao TERMINAL)))))
+# import this
+(mostra os bons costumes do Python)
+
+dentro do PYTHON3
+# help(print)
+(mostra os comandos de print)
+
+dica: para sair pressione q
+
+# print(texto.lower())     (mostra a variavel em minusculas)
+# print(texto.upper())    (mostra a variavel em maiusculas)
+# print(texto.title())        (primeira letra maiuscula)
+# print(texto.strip())      
+# print(texto.replace('l','p'))   (troca a letra l por p)
+
+# email = str(input('Digite um E-mail: '))    # converte todo o dado numerico em texto
+
+dica: instalar extensions no VSC Python Extension Package
+            para ver o que pode ter depois de ponto(.) ctrl+Espaço
+
+
+
+----------------------
+listas
+----------------------
+
+dica: #! hashbang serve para o interpretador fazer chamar phyton3 de vez o executavel, ao tirar o .py
+
+
+
+-------------------------
+criando executavel Python
+----------------------
+
+>>> mv listasTuplasDicionarios.py listasTuplasDicionarios #(renomeia o arquivo de .py para executavel
+>>> chmod +x listasTuplasDicionarios  #(altera propriedade de acesso para TODOS usuários)
+
+>>> ./listasTuplasDicionarios      (executa o arquivo como se fosse do proprio linux)
+
+
+-----------------------
+>>> import random 
+
+----------------------------
+métodos de lista
+---------------------------
+
+
+###################
+##### DICTIONARIES
+###################
+
+#
+
+
+
+###################
+####### GIT HUB
+###################
+
+
+
+
+
+
