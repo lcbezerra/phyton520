@@ -214,8 +214,24 @@ métodos de lista
 ####### GIT HUB
 ###################
 
+- Criando um repositório novo
+
+-SE NAO TIVER REPOSITORIO
+
+> echo "# phyton520" >> README.md
+> git init
+> git add README.md
+> git commit -m "first commit"
+> git remote add origin https://github.com/lcbezerra/phyton520.git
+> git push -u origin master
+
+-SE JÁ CRIADO INSERE OS COMANDOS
+
+> git remote add origin https://github.com/lcbezerra/phyton520.git
+> git push -u origin master
 
 
-
-
+> git add -A                        #adiciona todo trabalho
+> git commit -m "Aula1"       #
+> git push                                     #envia para o servidor
 
