@@ -1,0 +1,20 @@
+##################
+
+###############
+USANDO MÓDULOS
+###############
+
+
+1 CRIA PASTA /MODULOS
+2 CRIA ARQUIVO CHAMADO __init__.py
+3 CRIAR ARQUIVO NA RAIZ ACIMA: ../modulos.py
+
+toda vez que for executar um modulo em algum codigo coloca
+
+#!/usr/bin/python3
+
+import modulos.calculadora as calculadora
+
+soma = calculadora.somar(1,2)
+
+print(soma)
