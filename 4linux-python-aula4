@@ -1,28 +1,3 @@
-##################
-
-###############
-USANDO MÓDULOS
-###############
-
-
-1 CRIA PASTA /MODULOS
-2 CRIA ARQUIVO CHAMADO __init__.py
-3 CRIAR ARQUIVO NA RAIZ ACIMA: ../modulos.py
-
-toda vez que for executar um modulo em algum codigo coloca
-
-#!/usr/bin/python3
-
-import modulos.calculadora as calculadora
-
-soma = calculadora.somar(1,2)
-
-print(soma)
-
-
-
-
-
 ######################################
 iNSTALAR PIP3 - CRIAÇÃO DE AMBIENTES ISOLADOS
 ######################################
@@ -44,8 +19,24 @@ criar um arquivo usar_pandas.py na raiz Aula3
 > pip3 install jupyter
 > jupyter-notebook
 
+
+
+########## Caso queira recuperar o env em outro local #################
+
+cria um arquivo requisitos.txt
+> pip freeze > requisitos.txt
+> deactivate                                                    ### desativa o ambiente isolado
+
+
+> python3 -m virtualenv env               ### cria novo ambiente isolado
+> . env/bin/activate                                  ### ativa novo ambiente
+
+
+> pip3 install -r requisitos.txt  env             ### instala demais requsiitos de modulo de acordo com o ambiente criado anteriormente        
+
 #########################################
 Usando o Jupyter Notebook
+########################################
 Executar esse comando no terminal
 
 $ jupyter-notebook
@@ -58,7 +49,9 @@ import numpy as np
 
 ##########################################
 Usando bibliotexas de ML/Big Data
+#########################################
 Numpy
+########################################
 np.array([1.2, 3.5, 7.8])
 np.array([1.2, 3.5, 7.8])
 array([1.2, 3.5, 7.8])
@@ -73,6 +66,7 @@ np.arange(90)
 
 ########################################
 Usando Pandas
+########################################
 ip3 install sklearn
 ! pip3 install sklearn
 
@@ -85,22 +79,14 @@ dataFrame
 pd.DataFrame(dataFrame.data, columns = dataFrame.feature_names)
 
 
+########################################
+CRIANDO ARQUIVO QUE O GIT IGNORA
+########################################
+
+Criar na raiz total /520/ um arquivo .gitignore
 
 
 
-
-
-
-#####################################
-Python Data Analysis Library
-
-PANDAS
-
-DICA - 
-Jupyter Notebook - PARA TESTES ONLINE COM PYTHON
-GOOGLE COLABS - 
-
-
-
-
-
+#################################################
+ORIENTAÇÃO AO OBJETO
+#################################################

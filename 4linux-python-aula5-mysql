@@ -1,0 +1,94 @@
+################# BANCO DE DADOS ######################
+
+> sudo su
+> apt install postgresql
+
+> systemctl status postgresql
+> systemctl start postgresql
+
+######### usuario padrão POSTGRES
+
+###MUDANDO USUÁRIO
+
+> su - postgres
+  ## su - (nome de usuario)
+
+> psql                      #### entra no BD
+
+> CREATE USER admin PASSWORD '4linux';
+
+> CREATE DATABASE projeto OWNER admin;
+
+> \q                #sair
+
+
+> psql -h localhost -U admin projeto
+
+
+######## senha: 4linux
+############ agora está trabalhando em 'projeto'
+
+> \dt                     ### mostra as tabelas criadas, mas no caso nao criamos ainda, nao mostra nada
+
+> CREATE TABLE scripts(id SERIAL, nome VARCHAR(50), conteudo TEXT);    ##VARCHAR define o tamanho máximo de carateres disponíveis por espaço
+
+> \dt              # vai mostrar:
+
+#        List of relations
+# Schema |  Name   | Type  | Owner 
+# --------+---------+-------+-------
+# public | scripts | table | admin
+#(1 row)
+
+> \d scripts          ### mostra melhor
+
+> INSERT INTO scripts(nome, conteudo) VALUES ('Daniel' , 'Programador da 4 linux'); ### inserindo dados na tabela
+
+# inserindo 5 itens
+
+> INSERT INTO scripts(nome, conteudo) VALUES ('Luiz' , 'Pintor');
+> INSERT INTO scripts(nome, conteudo) VALUES ('Joana' , 'Cozinheira da Escola');
+> INSERT INTO scripts(nome, conteudo) VALUES ('Mauro' , 'Estagiário da 4 linux');
+> INSERT INTO scripts(nome, conteudo) VALUES ('Leonel' , 'Porteiro da 4 linux');
+> INSERT INTO scripts(nome, conteudo) VALUES ('Marcos' , 'Faxineiro da 4 linux');
+
+######### VER DADOS
+
+> SELECT * FROM scripts;
+
+########## se quiser ver só os nomes
+
+> SELECT nome FROM scripts;
+
+########## pegar só quem tem nome Daniel
+
+> SELECT * FROM scripts WHERE nome = 'Daniel';
+
+############# trocando o nome de Daniel do id=1 para Luciano
+
+> UPDATE scripts SET nome = 'Luciano' WHERE id = 1;
+
+########## pesquisando somente o id = 1
+
+> SELECT * FROM scripts WHERE id =1;
+
+######### Deletando a linha inteira onde o id = 1
+
+> DELETE FROM scripts WHERE id = 1;
+
+
+> \x               #### exibição expandida   (\x volta)
+
+############ TRANSACTIONS - CRIA CHECK POINT E DEPOIS DAS MODIFICAÇÕES VOCÊ VALIDA
+
+> BEGIN;
+
+> DELETE FROM scripts;
+
+> ROLLBACK;              ##### faz os comandos executados cancelaram
+
+> COMMIT;        ##### valida os dados executados
+
+
+> TRUNCATE scripts;                #### DELETA OS DADOS DA TABELA (Usado em Framework WEB)
+
